@@ -157,7 +157,9 @@ img {
   display: flex;
   align-items: center;
 }
-.icon-envelop {
+.icon-envelop,
+.icon-smartphone {
+  fill: #757575;
   margin-right: 10px;
 }
 
@@ -166,9 +168,19 @@ img {
   color: var(--accent-color);
 }
 
+.mail-link:hover .icon-envelop,
+.mail-link:focus .icon-envelop {
+  fill: var(--accent-color);
+}
+
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+}
+
+.tel-link:hover .icon-smartphone,
+.tel-link:focus .icon-smartphone {
+  fill: var(--accent-color);
 }
 
 /* =========HERO========== */
@@ -259,6 +271,17 @@ img {
 
 /* ==========ADVANTAGES====== */
 
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--btn-background);
+  border-radius: 4px;
+}
+
 .advantages .title-item {
   margin-bottom: 10px;
 }
@@ -318,10 +341,89 @@ img {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #ffffff;
 }
 
 .member .title-item {
   margin-bottom: 10px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  color: var(--secondary-font);
+  background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  fill: #afb1b8;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #fff;
+}
+
+/* ============CLIENTS============ */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients .about-us-title {
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30px;
+}
+.client-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.client-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-list-icon {
+  fill: #afb1b8;
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon {
+  fill: var(--accent-color);
 }
 
 /* =======FOOTER======== */
@@ -353,6 +455,10 @@ img {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
+}
+
+.join {
+  display: inline-block;
 }
 
 /* ========PROTFOLIO========== */
