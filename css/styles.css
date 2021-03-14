@@ -457,8 +457,51 @@ img {
   color: var(--accent-color);
 }
 
+.footer > .container {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.social-dark-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-dark-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-dark-link:hover,
+.social-dark-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-dark-icon {
+  fill: #ffffff;
+}
+
+/* .social-dark-link:hover .social-dark-icon,
+.social-dark-link:focus .social-dark-icon {
+  fill: #fff;
+} */
+
+.join-wrapper {
+  width: 206px;
+  height: 80;
+}
+
 .join {
-  display: inline-block;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* ========PROTFOLIO========== */
