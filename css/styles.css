@@ -81,7 +81,7 @@ img {
 }
 
 .logo {
-  margin-right: 93px;
+  
 
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -89,6 +89,9 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+.header .logo {
+  margin-right: 93px;
 }
 
 .logo-black-item {
@@ -488,14 +491,11 @@ img {
   fill: #ffffff;
 }
 
-/* .social-dark-link:hover .social-dark-icon,
-.social-dark-link:focus .social-dark-icon {
-  fill: #fff;
-} */
 
 .join-wrapper {
   width: 206px;
   height: 80;
+  margin-left: 70px;
 }
 
 .join {
