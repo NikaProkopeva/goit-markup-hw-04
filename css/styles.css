@@ -135,6 +135,23 @@ img {
 .nav-list .nav-link.current {
   color: var(--accent-color);
 }
+.nav-item {
+  position: relative;
+}
+
+.nav-link.current::after {
+  content: '';
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  
+}
 
 .nav-list .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -234,7 +251,7 @@ img {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
 
   align-items: center;
   letter-spacing: 0.06em;
